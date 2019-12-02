@@ -23,6 +23,11 @@ plugins {
     kotlin("jvm") version "1.3.60"
 }
 
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_6
+    targetCompatibility = JavaVersion.VERSION_1_6
+}
+
 repositories {
     mavenCentral()
 }
