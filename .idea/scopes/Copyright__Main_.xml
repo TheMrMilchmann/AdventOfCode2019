@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Copyright (Main)" pattern="file[AdventOfCode2019.main]:kotlin//*||file[AdventOfCode2019]:build.gradle.kts||file[AdventOfCode2019]:settings.gradle.kts" />
+</component>
