@@ -1,6 +1,6 @@
 # AdventOfCode 2019
 
-My solutions to the "Advent of Code 2019" riddles using Kotlin.
+My solutions to the "Advent of Code 2019" riddles using Kotlin 1.3 and Java 6.
 
 
 ## License
