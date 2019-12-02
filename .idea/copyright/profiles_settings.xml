@@ -3,5 +3,8 @@
     <module2copyright>
       <element module="Copyright (Main)" copyright="MIT (Main)" />
     </module2copyright>
+    <LanguageOptions name="__TEMPLATE__">
+      <option name="addBlankAfter" value="false" />
+    </LanguageOptions>
   </settings>
 </component>
