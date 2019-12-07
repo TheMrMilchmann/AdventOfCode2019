@@ -28,7 +28,6 @@ fun main() {
     println(run(input.map { it.split(')').let { s -> s[0] to s[1] } }))
 }
 
-
 private fun run(data: List<Pair<String, String>>): Int {
     fun String.countTransitiveOrbits(depth: Int = 0): Int {
         val immediateOrbits = data.filter { it.first == this }
