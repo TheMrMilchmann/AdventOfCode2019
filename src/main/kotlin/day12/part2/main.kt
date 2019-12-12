@@ -74,13 +74,22 @@ private fun run(positions: List<Vec>): Long {
     val yCycle = revisitCoordAlongAxis(Vec::y)
     val zCycle = revisitCoordAlongAxis(Vec::z)
 
-    fun lcm(a: Long, b: Long): Long {
-        var lcm = if (a > b) a else b
-        while (true) {
-            if (lcm % a == 0L && lcm % b == 0L) return lcm
-            lcm++
+    fun gcd(a: Long, b: Long): Long {
+        var r = abs(b)
+        var oldR = abs(a)
+
+        while (r != 0L) {
+            val quotient = oldR / r
+
+            val tmpR = r
+            r = oldR - quotient * r
+            oldR = tmpR
         }
+
+        return oldR
     }
+
+    fun lcm(a: Long, b: Long): Long = a / gcd(a, b) * b
 
     fun lcm(a: Int, b: Int) = lcm(a.toLong(), b.toLong())
     fun lcm(a: Int, b: Long) = lcm(a.toLong(), b)
